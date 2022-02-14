@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Valentine's Challenge Week 💘</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Gift Selector 💝</h1>
+        <p class="result" id="result">Total gift cost: <span id="cost-el">...</span></p>
+        <form>
+            <label for="food-select">Select food:</label>
+            <select id="food-select" required>
+                <option value="">--Please select an option--</option>
+                <option value="5">🍓 Strawberries - $5</option>
+                <option value="10">🍫 Chocolate - $10</option>
+                <option value="20">🧁 Cupcakes - $20</option>
+            </select>
+            <br>
+            <label for="transport-select" >Select transport:</label>
+            <select id="transport-select">
+                <option value="">--Please select an option--</option>
+                <option value="5">🛼 Rollerskates - $5</option>
+                <option value="50">🚘 Limo - $50</option>
+                <option value="500">🚁 Helicopter - $500</option>
+            </select>
+            <br>
+            <div>
+                <label for="balloon-checkbox">Add Balloons? 🎈</label>            
+                <input type="checkbox" id="balloon-checkbox" name="balloon-checkbox" checked>
+            </div>
+            
+            <button id="btn" type="button">Calculate</button>
+            <h2  style="color: red;" id="error-el"></h2>
+        <form>
+            <button id="btn2" type="button" onclick="clearValue()">Clear Total</button>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
